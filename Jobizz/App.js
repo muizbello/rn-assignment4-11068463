@@ -12,8 +12,8 @@ export default function App(){
     <SafeAreaProvider >
          <NavigationContainer style={styles.container}>
           <Stack.Navigator initialRouteName="Login">
-            <Stack.Screen name="Jobizz" component={LoginPage} />
-            <Stack.Screen name='MainInterface' component={MainInterface} />
+            <Stack.Screen name= 'Login' component={LoginPage} options={{ headerShown: false }}/>
+            <Stack.Screen name='MainInterface' component={MainInterface}  options={{ headerShown: false }} />
           </Stack.Navigator>
     </NavigationContainer>
     </SafeAreaProvider>
@@ -24,6 +24,6 @@ export default function App(){
 
 const styles = StyleSheet.create({
   container: {
-    margin: 5,
+    backgroundColor: '#fff',
   },
 });
